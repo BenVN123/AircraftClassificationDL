@@ -96,10 +96,6 @@ def create_app(test_config=None):
             flash(error)
 
         return render_template('questions.html', questions=questions)
-    
-    @app.route('/stats')
-    def stats():
-        return render_template('stats.html')
 
     @app.route('/about')
     def about():

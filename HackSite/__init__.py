@@ -5,7 +5,7 @@ def create_app(test_config=None):
     # create and configure the app
     app = Flask(__name__, instance_relative_config=True)
     app.config.from_mapping(
-        SECRET_KEY='dev',
+        SECRET_KEY='uPqECIPsjfu7qQ93MwHiyDr73QyhyjUphSnehNAt',
         DATABASE=os.path.join(app.instance_path, 'HackSite.sqlite'),
     )
 
@@ -77,7 +77,7 @@ def create_app(test_config=None):
             p = request.form['password']
             error = None
 
-            if p != 'uPqECIPsjfu7qQ93MwHiyDr73QyhyjUphSnehNAt':
+            if p != 'password:)':
                 error = 'Invalid password.'
 
             if error is None:

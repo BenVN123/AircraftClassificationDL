@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+
+{% block title %}Question {{ id }}{% endblock %}
+
+{% block content %}
+{% if g.user %}
+<article class="media content-section">
+    <form method='post'>
+        <input type='text' size='140%' name='body'>
+        <input type='submit' value='Answer'>
+    </form>
+</article>
+{%endif%}
+
+{% for a in answers %}
+        <article class="media content-section">
+          <div class="media-body">
+            <p class="article-content" style="word-break: break-word;">{{ a.body }}</p>
+          </div>
+        </article>
+    {% endfor %}
+{% endblock content %}

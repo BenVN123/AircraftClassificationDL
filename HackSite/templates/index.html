@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+    <div class="content-section">
+        <h3>Try the model!</h3>
+        <hr>
+        <p>Would you like to try using the model yourself? Just choose an image file of an airplane and click evaluate! Don't worry, we don't save your images permanently. Please keep in mind that our deep learning model is an amateur one. Because of this, it is very likely that the model has many inaccuracies.</p>
+        <form method="post" enctype="multipart/form-data">
+            <input type='file' name='uploaded_img' required><br>
+            <input style='margin-top:10px; margin-bottom:10px' type='submit' value='Evaluate'>
+        </form>
+        <span>JPG and PNG files only.</span>
+
+        {% if output %}
+        <h5 style="margin-top:10px">AI Prediction: {{output}}</h5>
+        {%  endif %}
+    </div>
+{% endblock content %}

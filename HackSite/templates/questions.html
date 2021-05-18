@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+
+{% block title %}Questions{% endblock %}
+
+{% block content %}
+<article class="media content-section">
+    <form method='post'>
+        <input type='text' placeholder='Question' size='110%' name='q'>
+        <input type='submit' value='Ask'>
+    </form>
+</article>
+    {% for q in questions %}
+        <article class="media content-section">
+          <div class="media-body">
+              <small class="text-muted">{{ q.date_created.strftime('%Y-%m-%d') }}</small>
+              <hr>
+            <p class="article-content" style="word-break: break-word;">{{ q.body }}</p>
+     
+            <a href='{{url_for("answer", id=q.id)}}'>Answers</a>
+                </p>
+          </div>
+        </article>
+    {% endfor %}
+{% endblock content %}

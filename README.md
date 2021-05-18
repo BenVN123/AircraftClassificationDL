@@ -6,7 +6,7 @@ Our hackathon project is a deep learning detection type program which differenti
 
 Datasets, Deep Learning Code, and Model Weights: https://drive.google.com/drive/folders/1iJLlyFM3grgPhNYWgqqjpYMcS09SNta3?usp=sharing
 
-*The model weights file should be inside /HackSite/deeplearning/
+*The model weights file should be inside /HackSite/deeplearning/*
 
 ## Usage
 

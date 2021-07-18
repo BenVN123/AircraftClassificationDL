@@ -1,4 +1,4 @@
-# Classifying between Military and Civilian Aircraft with Deep Learning [In Progress]
+# Classifying between Military and Civilian Aircraft with Deep Learning
 
 Our hackathon project is a deep learning detection type program which differentiates a military from a passenger aircraft. This Github repository contains the Flask frontend of the project.
 

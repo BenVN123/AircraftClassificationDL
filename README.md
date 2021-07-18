@@ -19,5 +19,5 @@ python run.py
 ```
 
 
-Created by Ben Nguyen, [Eshaan Kaipa](https://github.com/epicesh), and [Alan Li](https://github.com/laalyn)
+Created by [@BenVN123](https://github.com/BenVN123), [@epicesh](https://github.com/epicesh), and [@laalyn](https://github.com/laalyn)
 
